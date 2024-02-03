@@ -308,6 +308,9 @@ font-weight: 600;
 
 /* Experince section */
 
+.experince-containers{
+    padding: 50px 0;
+}
 #experience {
     position: relative;
 }
@@ -332,6 +335,10 @@ font-weight: 600;
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around;
+}
+
+video{
+    border-radius: 2rem;
 }
 
 article{
