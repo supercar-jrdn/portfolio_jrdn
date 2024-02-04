@@ -138,12 +138,15 @@ a:hover{
 
 /* Sections */
 
+.wrapper {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
 section{
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
+    padding: 80px 0;
     box-sizing: border-box;
-    min-height: fit-content;
 }
 
 .section-container{
@@ -156,11 +159,9 @@ section{
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
 }
 
-.section__pic-container{
-    display: flex;
+#profile .section__pic-container img {
     height: 400px;
     width: 400px;
     margin: auto 0;
@@ -300,19 +301,29 @@ font-weight: 600;
     height: 70%;
 }
 
-.section__pic-container{
-    height: 400px;
+#about .section__pic-container img {
     width: 400px;
+    height: auto;
     margin: auto 0;
 }
 
 /* Experince section */
+
+.skills-containers {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
 
 .experince-containers{
     padding: 50px 0;
 }
 #experience {
     position: relative;
+}
+
+.experience {
+    padding-top: 50px;
 }
 
 .experience-sub-title{
@@ -356,6 +367,16 @@ article .icon{
 
 #projects {
     position: relative;
+}
+
+.experience-details-container {
+    padding-top: 50px;
+}
+
+.project-containers {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .color-container{
@@ -423,10 +444,77 @@ article .icon{
 /*footer*/
 
 footer{
-    height: 26vh;
-    margin: 0 1rem;
+    padding-bottom: 30px;
 }
 
 footer p{
     text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+    #profile, .section-container, .project-containers {
+        flex-direction: column;
+    }
+
+    .section__pic-container {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #about .section__pic-container {
+        padding-top: 50px;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+
+    details-container{
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-containers, .skills-containers {
+        flex-direction: column;
+    }
+
+    article {
+        width: 15rem;
+        justify-content: flex-start;       
+    }
+
+    section {
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    article{
+        width: 10rem;
+    }  
+}
+
+@media screen and (max-width: 430px) {
+    #profile .section__pic-container img {
+        height: 275px;
+        width: 275px;
+    }
+
+    #about .section__pic-container img {
+        height: auto;
+        width: 275px;
+    }
+
+    .contact-info-container p {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .contact-info-upper-container {
+        border: none;
+    }
 }

@@ -33,23 +33,19 @@
     section{
         margin: 0 5%;
     }
-    .section__pic-container{
+    /*.section__pic-container{
         width: 275px;
         height: 275px;
         margin: 0;
-    }
+    }*/
     .about-containers{
         margin-top: 0;
     }
 }
 
 @media screen and (max-width: 600px) {
-    #contact,
-    footer{
-        height: 40 vh;
-    }
+
     #profile{
-        height: 83vh;
         margin-bottom: 0;
     }
     article {
@@ -83,7 +79,6 @@
     }
     .section__pic-container{
         width: auto;
-        height: 46vw;
         justify-content: center;
     }
     .section__text__p2{
